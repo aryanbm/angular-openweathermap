@@ -1,0 +1,37 @@
+<div class="d-flex justify-content-center align-items-center main-container">
+   <div class="d-flex flex-column container">
+    <div class="d-flex justify-content-center align-items-center location">
+        <mat-icon class="location-icon">place_black</mat-icon>
+        <p>Rasht, Guilan</p>
+    </div>
+    <div class="d-flex flex-column weather">
+        <div class="d-flex justify-content-between weather-row-1">
+            <div><img width="125px" height="125px" [src]="switchICon()" alt="weather-icon"></div>
+            <div class="d-flex flex-column temperature">
+                <h3>{{weatherDetails.temp}}°</h3>
+                <p>Feels like {{weatherDetails.feelslike}}°</p>
+            </div>
+        </div>
+        <div class="d-flex flex-column weather-row-2">
+            <h3>{{weatherDetails.weatherMain}}</h3>
+            <p>{{weatherDetails.weatherDescription}}</p>
+        </div>
+    </div>
+    <div class="d-flex justify-content-between weather-description">
+        <div class="d-flex flex-column">
+            <h3>Wind</h3>
+            <p>{{weatherDetails.wind}} m/h</p>
+        </div>
+        <div class="d-flex flex-column">
+            <h3>Humidity</h3>
+            <p>{{weatherDetails.humidity}}%</p>
+        </div>
+        <div class="d-flex flex-column">
+            <h3>Visibility</h3>
+            <p>{{weatherDetails.visibility}}</p>
+        </div>
+    </div>
+   </div>
+       
+        
+</div>
